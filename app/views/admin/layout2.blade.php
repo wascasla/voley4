@@ -26,6 +26,8 @@
 
     {{ HTML::style('assets/css/styles/alert-blackgloss.css', array('media' => 'screen')) }}
 
+    {{ HTML::style('assets/css/jquery.toastmessage.css', array('media' => 'screen')) }}
+
 
    
     
@@ -175,6 +177,9 @@
     {{ HTML::script('assets/js/jquery.js') }}
     {{ HTML::script('assets/js/bootstrap.js') }}
     {{ HTML::script('assets/js/bootstrap-notify.js') }}
+
+    {{ HTML::script('assets/js/jquery.toastmessage.js') }}
+    {{ HTML::script('assets/js/jquery.toastmessage.tests.js') }}
 
     <script src="assets/js/jquery.js"></script>
 
