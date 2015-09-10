@@ -103,36 +103,15 @@
   </p>
 
   @if( Session::has('modal_message_error'))
-    <script type="text/javascript">
-      $('.top-left').notify({
-        message: { text: 'Aw yeah, It works!' }
-      }).show(); 
+     <script>
+      $(function() {
+       $().toastmessage('showErrorToast', "ERROR!!!! NO EXISTEN EQUIPOS EN EL TORNEO");
+      });
     </script>
+    
   @endif
 
   
-
-  @if( Session::has('modal_message_error'))
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#myModal').show();
-        });
-    </script>
-    <div id="popupmodal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h3>Notification: Please read</h3>
-        </div>
-        <div class="modal-body">
-            <p>
-                {{ Session::get('modal_message_error') }}
-            </p>
-        </div>
-        <div class="modal-footer">
-            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        </div>
-    </div>
-@endif
 
 <div class="container">
   <h2>Small Modal</h2>
